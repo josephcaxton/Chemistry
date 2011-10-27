@@ -690,7 +690,7 @@ int Version = 0;
 	
 }*/
 
-void CreateMyPDFFile (CGRect pageRect, const char *filename,const char *picture,const char *text) {
+/*void CreateMyPDFFile (CGRect pageRect, const char *filename,const char *picture,const char *text) {
 	
 	// This code block sets up our PDF Context so that we can draw to it
 	CGContextRef pdfContext;
@@ -799,7 +799,7 @@ void CreateMyPDFFile (CGRect pageRect, const char *filename,const char *picture,
 	}
 }
 
-
+*/
 
 - (void)webViewDidFinishLoad:(UIWebView *)webview {
 	

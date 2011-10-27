@@ -1150,6 +1150,7 @@
 		7CE939531459AC9E00D308B9 /* DescriptiveAnswers.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7CE939511459AC9E00D308B9 /* DescriptiveAnswers.xml */; };
 		7CE939541459AC9E00D308B9 /* Results.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7CE939521459AC9E00D308B9 /* Results.xml */; };
 		7CE939561459ACC700D308B9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE939551459ACC700D308B9 /* Entitlements.plist */; };
+		7CE939591459B85B00D308B9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE939581459B85B00D308B9 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2344,6 +2345,7 @@
 		7CE939521459AC9E00D308B9 /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
 		7CE939551459ACC700D308B9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		7CE939571459AE6500D308B9 /* Chemistry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Chemistry.entitlements; path = Chemistry/Chemistry.entitlements; sourceTree = "<group>"; };
+		7CE939581459B85B00D308B9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2351,6 +2353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE939591459B85B00D308B9 /* libsqlite3.0.dylib in Frameworks */,
 				7CE9305114599A2700D308B9 /* QuartzCore.framework in Frameworks */,
 				7CE9304F14599A1E00D308B9 /* StoreKit.framework in Frameworks */,
 				7CE9304D14599A1000D308B9 /* MediaPlayer.framework in Frameworks */,
@@ -2401,6 +2404,7 @@
 		7CE9300D145997C400D308B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CE939581459B85B00D308B9 /* libsqlite3.0.dylib */,
 				7CE9305014599A2700D308B9 /* QuartzCore.framework */,
 				7CE9304E14599A1E00D308B9 /* StoreKit.framework */,
 				7CE9304C14599A1000D308B9 /* MediaPlayer.framework */,
