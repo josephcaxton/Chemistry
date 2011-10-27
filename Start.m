@@ -332,44 +332,28 @@
 		
 		if([AccessLevel intValue] == 1){
 			
-			title = @"GCSE Mathematics Free Version";
+			title = @"GCSE Chemistry Free Version";
 		}
 		else if ([AccessLevel intValue] == 2){
 			
-			title = @"GCSE Mathematics 250 Questions";
+			title = @"GCSE Chemistry 250 Questions";
 			
 		}
 		else if ([AccessLevel intValue] == 3){
 			
-			title = @"GCSE Mathematics 500 Questions";
+			title = @"GCSE Chemistry 500 Questions";
 			
 		}
 		else if ([AccessLevel intValue] == 4){
 			
-			title = @"GCSE Mathematics 750 Questions";
+			title = @"GCSE Chemistry 750 Questions";
 			
 		}
 		else if ([AccessLevel intValue] == 5){
 			
-			title = @"GCSE Mathematics 1000 Questions";
+			title = @"GCSE Chemistry 1000+ Questions";
 			
-		}
-		else if ([AccessLevel intValue] == 6){
-			
-			title = @"GCSE Mathematics 1250 Questions";
-			
-		}
-        else if ([AccessLevel intValue] == 7){
-			
-			title = @"GCSE Mathematics 1500 Questions";
-			
-		}
-        else if ([AccessLevel intValue] == 8){
-			
-			title = @"GCSE Mathematics 1600 Questions";
-			
-		}
-	
+		}	
 	}
 	
 	else if (tableView.tag == 2 && section == 0){
