@@ -2343,6 +2343,7 @@
 		7CE939511459AC9E00D308B9 /* DescriptiveAnswers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DescriptiveAnswers.xml; sourceTree = "<group>"; };
 		7CE939521459AC9E00D308B9 /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
 		7CE939551459ACC700D308B9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		7CE939571459AE6500D308B9 /* Chemistry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Chemistry.entitlements; path = Chemistry/Chemistry.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2369,6 +2370,7 @@
 		7CE92FFF145997C400D308B9 = {
 			isa = PBXGroup;
 			children = (
+				7CE939571459AE6500D308B9 /* Chemistry.entitlements */,
 				7CE939551459ACC700D308B9 /* Entitlements.plist */,
 				7CE93015145997C400D308B9 /* Other Sources */,
 				7CE9305214599A8900D308B9 /* Settings.bundle */,
@@ -4891,6 +4893,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -4906,6 +4909,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "D87B5A6A-86E4-4A41-84E9-BB7978C1022C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -4934,9 +4938,12 @@
 		7CE93034145997C400D308B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Chemistry/Chemistry.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chemistry/Chemistry-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "Chemistry/Chemistry-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -4946,9 +4953,12 @@
 		7CE93035145997C400D308B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Chemistry/Chemistry.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chemistry/Chemistry-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "Chemistry/Chemistry-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
