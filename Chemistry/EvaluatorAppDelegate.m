@@ -172,6 +172,26 @@ static NSString* const kAnalyticsAccountId = @"UA-31971143-1";
         NSLog(@"error in trackPageview");
     }
 
+    // Review
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *ReviewID = [prefs stringForKey:@"Review"];
+    if (ReviewID == nil) {
+        
+        NSString *ID = @"0";
+        [prefs setObject:ID forKey:@"Review"];
+        [prefs setObject:ID forKey:@"IHaveLeftReview"];
+        
+        [prefs synchronize];
+        
+    }
+    //for testing
+    /*NSString *ID = @"0";
+     [prefs setObject:ID forKey:@"Review"];
+     [prefs setObject:ID forKey:@"IHaveLeftReview"];
+     
+     [prefs synchronize];*/
+    
+
     
 	return YES;
 }
