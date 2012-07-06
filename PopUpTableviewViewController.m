@@ -450,10 +450,10 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
         NSString *UrlString = @"http://itunes.apple.com/us/app/gcse-chemistry-questions./id421349385?ls=1&mt=8";
         
         TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-        [tweetSheet setInitialText:@"Checkout LearnersCloud Chemistry app. Quality Chemistry questions and answers. :)"];
+        [tweetSheet setInitialText:@"Checkout #LearnersCloud #Chemistry app. Quality Chemistry questions and answers. :)"];
+        [tweetSheet addImage:[UIImage imageNamed:@"Icon.png"]];
         [tweetSheet addURL:[NSURL URLWithString:UrlString]];
-        [tweetSheet addImage:[UIImage imageNamed:@"Icon"]];
-        
+                
        
         
         tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) { 
