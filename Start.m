@@ -726,6 +726,18 @@
         
     }
     
+    else {
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        NSString *ReviewID = [prefs stringForKey:@"Review"];
+        NSInteger Counter = [ReviewID integerValue];
+        NSInteger CounterPlus = Counter + 1;
+        NSString *ID = [NSString stringWithFormat:@"%d",CounterPlus];
+        [prefs setObject:ID  forKey:@"Review"];
+        [prefs synchronize];
+        
+    }
+
+    
 }
 
 - (void)reviewPressed {

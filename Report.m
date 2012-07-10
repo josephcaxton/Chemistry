@@ -155,7 +155,6 @@
 	
 	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 	[appDelegate.SecondThread cancel];
-	[appDelegate.SecondThread release];
 	appDelegate.SecondThread = nil;
 	
 	
