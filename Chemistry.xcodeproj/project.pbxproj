@@ -11,6 +11,7 @@
 		7C045F7D156BDB050065E2DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F7C156BDB040065E2DC /* CFNetwork.framework */; };
 		7C045F81156BDDE70065E2DC /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F80156BDDE70065E2DC /* libGoogleAnalytics.a */; };
 		7C08DBCF150B75F000B8090D /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C08DBCA150B75F000B8090D /* Maths.png */; };
+		7C0D1F5715E5214100999411 /* buttonbackgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0D1F5615E5214100999411 /* buttonbackgroud.png */; };
 		7CCEF3CA15A5E05400A1438A /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CCEF3BD15A5E05400A1438A /* FBDialog.bundle */; };
 		7CCEF3CB15A5E05400A1438A /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCEF3C315A5E05400A1438A /* libfacebook_ios_sdk.a */; };
 		7CCEF3CF15A5E5F800A1438A /* PopUpTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CCEF3CE15A5E5D100A1438A /* PopUpTableviewViewController.m */; };
@@ -1169,6 +1170,7 @@
 		7C045F7F156BDDC50065E2DC /* GANTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		7C045F80156BDDE70065E2DC /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		7C08DBCA150B75F000B8090D /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
+		7C0D1F5615E5214100999411 /* buttonbackgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbackgroud.png; sourceTree = "<group>"; };
 		7CCEF3BB15A5E05400A1438A /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		7CCEF3BC15A5E05400A1438A /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		7CCEF3BD15A5E05400A1438A /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -2593,6 +2595,7 @@
 				7CE9308614599DFB00D308B9 /* Default-Portrait.png */,
 				7CE9308714599DFB00D308B9 /* Default-PortraitUpsideDown.png */,
 				7CE9308D14599E1300D308B9 /* Graph_Ipad.png */,
+				7C0D1F5615E5214100999411 /* buttonbackgroud.png */,
 				7CE9308F14599E2700D308B9 /* BlackBackGround.png */,
 				7CCEF3D215A5E64B00A1438A /* shareIcon.png */,
 				7CCEF3D415A5E66400A1438A /* mail.png */,
@@ -4905,6 +4908,7 @@
 				7CCEF3DB15A5E69D00A1438A /* LikeUsOnFaceBook.png in Resources */,
 				7CCEF3DD15A5E6AD00A1438A /* FollowUsOnTwitter.png in Resources */,
 				7CCEF3DF15A5E6C300A1438A /* logoutfacebook.png in Resources */,
+				7C0D1F5715E5214100999411 /* buttonbackgroud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
