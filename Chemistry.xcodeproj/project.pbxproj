@@ -5114,7 +5114,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Chemistry/Chemistry.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chemistry/Chemistry-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -5126,7 +5127,8 @@
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "E222D470-09F0-4BFE-A3DE-1B296DC61184";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E222D470-09F0-4BFE-A3DE-1B296DC61184";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
