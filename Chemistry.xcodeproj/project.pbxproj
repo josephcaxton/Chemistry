@@ -18,7 +18,6 @@
 		7C8C196F165E576B0026CBB5 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C196D165E576B0026CBB5 /* Icon-72@2x.png */; };
 		7C97C81116492CE80053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C81016492CE80053577F /* AVFoundation.framework */; };
 		7CBD82A11680B9BE00E3D30B /* 631.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD82A01680B9BE00E3D30B /* 631.pdf */; };
-		7CC263F816FA01CD00868246 /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263F716FA01A800868246 /* Evaluator.sqlite */; };
 		7CC263FA16FA01F200868246 /* Biology.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263F916FA01F200868246 /* Biology.png */; };
 		7CC263FD16FA020D00868246 /* website_promo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263FB16FA020D00868246 /* website_promo.png */; };
 		7CC263FE16FA020D00868246 /* website_promo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263FC16FA020D00868246 /* website_promo@2x.png */; };
@@ -1176,6 +1175,7 @@
 		7CEA2E37163D20D900C57943 /* btn_buy_deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEA2E32163D20D900C57943 /* btn_buy_deselected.png */; };
 		7CEA2E3C163D222D00C57943 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E3B163D210800C57943 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7CEA2E3E163D22A600C57943 /* TransparentToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */; };
+		7CED1182171D40340069C4F9 /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CED1181171D40240069C4F9 /* Evaluator.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1191,7 +1191,6 @@
 		7C8C196D165E576B0026CBB5 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		7C97C81016492CE80053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7CBD82A01680B9BE00E3D30B /* 631.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 631.pdf; sourceTree = "<group>"; };
-		7CC263F716FA01A800868246 /* Evaluator.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Evaluator.sqlite; sourceTree = "<group>"; };
 		7CC263F916FA01F200868246 /* Biology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Biology.png; sourceTree = "<group>"; };
 		7CC263FB16FA020D00868246 /* website_promo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = website_promo.png; sourceTree = "<group>"; };
 		7CC263FC16FA020D00868246 /* website_promo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "website_promo@2x.png"; sourceTree = "<group>"; };
@@ -2413,6 +2412,7 @@
 		7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentToolBar.m; sourceTree = "<group>"; };
 		7CEA2E3A163D210800C57943 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7CEA2E3B163D210800C57943 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7CED1181171D40240069C4F9 /* Evaluator.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Evaluator.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3803,7 +3803,7 @@
 				7CE935381459AC4F00D308B9 /* 1063.pdf */,
 				7CE935391459AC4F00D308B9 /* 1064.pdf */,
 				7CE9353A1459AC4F00D308B9 /* 1065.pdf */,
-				7CC263F716FA01A800868246 /* Evaluator.sqlite */,
+				7CED1181171D40240069C4F9 /* Evaluator.sqlite */,
 				7CE9353B1459AC4F00D308B9 /* AttributionIpad.pdf */,
 				7CE9353C1459AC4F00D308B9 /* copyrightlicense_agreement.pdf */,
 				7CE939511459AC9E00D308B9 /* DescriptiveAnswers.xml */,
@@ -3863,7 +3863,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CC263F816FA01CD00868246 /* Evaluator.sqlite in Resources */,
+				7CED1182171D40340069C4F9 /* Evaluator.sqlite in Resources */,
 				7CE93019145997C400D308B9 /* InfoPlist.strings in Resources */,
 				7CE9305314599A8900D308B9 /* Settings.bundle in Resources */,
 				7CE9307014599D2F00D308B9 /* ArrowWoodImpact.aiff in Resources */,
