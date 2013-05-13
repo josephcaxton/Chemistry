@@ -29,14 +29,13 @@
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:24.0];
     self.navigationItem.titleView = label;
     [label sizeToFit];
-    [label release];
+   
     
     [self.tableView setBackgroundView:nil];
     NSString *BackImagePath = [[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"];
 	UIImage *BackImage = [[UIImage alloc] initWithContentsOfFile:BackImagePath];
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
-    [BackImage release];
-    
+       
 
 	
 	PopBox = [FullDataArray mutableCopy];
@@ -100,7 +99,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
@@ -177,7 +176,7 @@
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:M_view animated:YES];
-		[M_view release];
+		
 	}
 	else if([TemplateType isEqualToString:@"Multiple Choice Multiple Answer"]){
 		
@@ -191,7 +190,7 @@
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:M_view animated:YES];
-		[M_view release];
+		
 		
 	}
 	else if([TemplateType isEqualToString:@"Descriptive Type"]){
@@ -206,7 +205,7 @@
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:D_view animated:YES];
-		[D_view release];
+		
 		
 		
 	}
@@ -223,7 +222,7 @@
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:T_view animated:YES];
-		[T_view release];
+		
 		
 		
 	}
@@ -240,7 +239,7 @@
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:T_view animated:YES];
-		[T_view release];
+		
 		
 	}
 	else if ([TemplateType isEqualToString:@"Fill the Blanks"]){
@@ -259,7 +258,7 @@
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:F_view animated:YES];
-		[F_view release];
+		
 		
 		
 	}
@@ -286,12 +285,6 @@
 }
 
 
-- (void)dealloc {
-	[FullDataArray release];
-	[PopBox release];
-	[NumberCounter release];
-    [super dealloc];
-}
 
 
 @end

@@ -29,8 +29,8 @@
 		[self addSubview:Activity];
 		[self addSubview:lbl];
 		
-		[Activity release];
-		[lbl release];
+		
+	
 		
 											 
     }
@@ -45,9 +45,6 @@
 }
 */
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

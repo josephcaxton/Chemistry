@@ -37,7 +37,7 @@ int Version = 0;
 		
 		[DataError show];
 		
-		[DataError release];
+		
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		
 		
@@ -92,7 +92,7 @@ int Version = 0;
 				
 				[DataError show];
 				
-				[DataError release];
+				
 				NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 				
 				
@@ -113,7 +113,7 @@ int Version = 0;
 				
 				[DataError show];
 				
-				[DataError release];
+				
 				NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 				
 				
@@ -124,8 +124,7 @@ int Version = 0;
 			
 							
 			break;
-		default:
-			break;
+		
 	}
 	
 	
@@ -137,8 +136,8 @@ int Version = 0;
 								 message delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"OK" otherButtonTitles:nil];
 	
 	[actionSheet showInView:self.tabBarController.view];	
-	[message release];
-	[actionSheet release];
+
+	
 	
 	
 	
@@ -191,8 +190,8 @@ int Version = 0;
 														   message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 			
 			[alert show];
-			[message release];
-			[alert release];
+		
+			
 								 
 		}
 	
@@ -217,7 +216,7 @@ int Version = 0;
 	
 	[parser setDelegate:self];
 	[parser parse];
-	[parser release];
+	
 	
 	
 	
@@ -562,31 +561,7 @@ int Version = 0;
 		
 		
 		
-		[QTDescription release];
-		[TopicName release];
-		[Autorize release];
-		[DateAutorized release];
-		[AllocatedMark release];
-		[Difficulty release];
-		[Question release];
-		[RequireActivityMarker release];
-		[Answer1Text release];
-		[Answer1Correct release];
-		[Answer1Reason release];
-		[Answer2Text release];
-		[Answer2Correct release];
-		[Answer2Reason release];
-		[Answer3Text release];
-		[Answer3Correct release];
-		[Answer3Reason release];
-		[Answer4Text release];
-		[Answer4Correct release];
-		[Answer4Reason release];
-		[Answer5Text release];
-		[Answer5Correct release];
-		[Answer5Reason release];
-		[AccessLevel release];
-		
+				
 	}
 }
 
@@ -601,10 +576,10 @@ int Version = 0;
 
 -(BOOL)DeleteFile:(NSString*)documentFullName {
 	
-	NSError **error = nil;
+	
 	
 	NSFileManager *FM = [NSFileManager defaultManager];
-	[FM removeItemAtPath:documentFullName error:error ];
+	[FM removeItemAtPath:documentFullName error:NULL ];
 	
 	return YES;
 }
@@ -627,7 +602,7 @@ int Version = 0;
 		
 		[DataError show];
 		
-		[DataError release];
+		
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		
 		
@@ -831,57 +806,61 @@ int Version = 0;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 	switch (indexPath.row) {
 		case 0:
-			;
-			Topicbutton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+        {
+			Topicbutton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 			[Topicbutton setTitle:@"Topics" forState:UIControlStateNormal];
 			Topicbutton.frame = CGRectMake(0, 0, 680, 45);
 			[Topicbutton addTarget:self action:@selector(StartUpload:) forControlEvents:UIControlEventTouchUpInside];
 			[Topicbutton setTag:indexPath.row];
 			[cell.contentView addSubview:Topicbutton]; 
 			break;
+        }
 			
 		case 1:
-			;
-			QuestionTemplatebutton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+        {
+			QuestionTemplatebutton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 			[QuestionTemplatebutton setTitle:@"QuestionTemplate" forState:UIControlStateNormal];
 			QuestionTemplatebutton.frame = CGRectMake(0, 0, 680, 45);
 			[QuestionTemplatebutton addTarget:self action:@selector(StartUpload:) forControlEvents:UIControlEventTouchUpInside];
 			[QuestionTemplatebutton setTag:indexPath.row];
 			[cell.contentView addSubview:QuestionTemplatebutton];
 			break;
-			
+        }
 		case 2:
-			;
-			Databutton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+        {
+			Databutton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 			[Databutton setTitle:@"Data" forState:UIControlStateNormal];
 			Databutton.frame = CGRectMake(0, 0, 680, 45);
 			[Databutton addTarget:self action:@selector(StartUpload:) forControlEvents:UIControlEventTouchUpInside];
 			[Databutton setTag:indexPath.row];
 			[cell.contentView addSubview:Databutton]; 
 			break;
+        }
 		case 3:
-			;
-			VersionButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+        {
+			VersionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 			[VersionButton setTitle:[NSString stringWithFormat:@"Version: %i",Version] forState:UIControlStateNormal];
 			VersionButton.frame = CGRectMake(0, 0, 680, 45);
 			[VersionButton addTarget:self action:@selector(ChangeVersionNumber:) forControlEvents:UIControlEventTouchUpInside];
 			[VersionButton setTag:indexPath.row];
 			[cell.contentView addSubview:VersionButton]; 
 			break;
+        }
 			
 		case 4:
-			;
-			PdfButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+        {
+			PdfButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 			[PdfButton setTitle:[NSString stringWithFormat:@"Create PDFs"] forState:UIControlStateNormal];
 			PdfButton.frame = CGRectMake(0, 0, 680, 45);
 			[PdfButton addTarget:self action:@selector(CreatePdfs:) forControlEvents:UIControlEventTouchUpInside];
 			[PdfButton setTag:indexPath.row];
 			[cell.contentView addSubview:PdfButton]; 
 			break;
+        }
 			
 	}
     
@@ -924,10 +903,10 @@ int Version = 0;
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController_Topics = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		
+		
+	
+		
 	}
 	
 	return fetchedResultsController_Topics;
@@ -955,10 +934,10 @@ int Version = 0;
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController_QT = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		
+		
+	
+		
 	}
 	
 	return fetchedResultsController_QT;
@@ -987,10 +966,10 @@ int Version = 0;
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController_Version = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		
+		
+	
+		
 	}
 	
 	return fetchedResultsController_Version;
@@ -1023,23 +1002,6 @@ int Version = 0;
 }
 
 
-- (void)dealloc {
-    
-	[fetchedResultsController_QT release];
-	[fetchedResultsController_Topics release];
-	[QTArray release];
-	[TopArray release];
-	[managedObjectContext release];
-	[FileName release];
-	[Topicbutton release];
-	[QuestionTemplatebutton release];
-	[Databutton release];
-	[VersionButton release];
-	[PdfButton release];
-	[fetchedResultsController_Version release];
-	//[VerNumber release];
-    [super dealloc];
-}
 
 
 @end

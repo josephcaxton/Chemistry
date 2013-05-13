@@ -12,7 +12,7 @@
 
 @implementation Start
 
-@synthesize FirstView, SecondView,FirstTable,SecondTable,QuestionPickerView,CustomDataSource,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction,popover,TVHeaderImageView;
+@synthesize FirstView, SecondView,FirstTable,SecondTable,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction,popover,TVHeaderImageView;
 
 
 #define SCREEN_WIDTH 768
@@ -31,7 +31,7 @@
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:24.0];
     self.navigationItem.titleView = label;
     [label sizeToFit];
-    [label release];
+   
     
 
 	
@@ -62,14 +62,13 @@
 	CGRect SecondFrame = CGRectMake(0,40, SCREEN_WIDTH, SCREEN_HEIGHT);
 	self.SecondView = [[UIView alloc] initWithFrame:SecondFrame];
 	 self.SecondView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
-	QuestionPickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0,20,SCREEN_WIDTH,180)];
-    CustomDataSource = [[CustomPickerDataSource_Num_Questions alloc] init];
-	CGRect SecondTableframe = CGRectMake(0 ,230, SCREEN_WIDTH, 700);
+	//QuestionPickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0,20,SCREEN_WIDTH,180)];
+    //CustomDataSource = [[CustomPickerDataSource_Num_Questions alloc] init];
+	CGRect SecondTableframe = CGRectMake(0 ,0, SCREEN_WIDTH, 700);
     self.SecondTable = [[UITableView alloc] initWithFrame:SecondTableframe style:UITableViewStyleGrouped];
 	//[self.view addSubview:SecondView];
 	//[self AddStartButton:2];
-    [BackImage release];
-
+   
 	
     NSString *HeaderLocation = [[NSBundle mainBundle] pathForResource:@"header_bar" ofType:@"png"];
     UIImage *HeaderBackImage = [[UIImage alloc] initWithContentsOfFile:HeaderLocation];
@@ -85,7 +84,7 @@
 	[FirstTable reloadData]; // we need this if not version information will not update after user buys more questions
 	[SecondTable reloadData]; // we need this if not the configuration of will not update
     
-    if(CustomDataSource != nil){ // this is the refresh the QuestionPicker after user purchase
+   /* if(CustomDataSource != nil){ // this is the refresh the QuestionPicker after user purchase
         
         [CustomDataSource release];
         CustomDataSource = [[CustomPickerDataSource_Num_Questions alloc] init];
@@ -104,7 +103,7 @@
         }
         
         
-    }
+    }*/
     
 	[self willAnimateRotationToInterfaceOrientation:self.interfaceOrientation duration:1];
     
@@ -119,7 +118,7 @@
         
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Review this app" message:@"Do you like this app enough to leave us a review?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
         [alertView show];
-        [alertView release];
+        
         
 	}
     else {
@@ -180,8 +179,8 @@
 		if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
 			
 			self.SecondView.frame = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT);
-			self.SecondTable.frame = CGRectMake(0 ,180, SCREEN_WIDTH, 700);
-			self.QuestionPickerView.frame = CGRectMake(0,0,SCREEN_WIDTH,180);
+			self.SecondTable.frame = CGRectMake(0 ,0, SCREEN_WIDTH, 700);
+			//self.QuestionPickerView.frame = CGRectMake(0,0,SCREEN_WIDTH,180);
 			self.Sound.frame =  CGRectMake(640.0, 10.0, 40.0, 45.0);
 			self.ShowAnswers.frame = CGRectMake(595.0, 10.0, 40.0, 45.0);
 			self.btnStartTest.frame = CGRectMake(265, 12.5, 156, 45);
@@ -190,8 +189,8 @@
 		else {
 			
 			self.SecondView.frame = CGRectMake(0,0, SCREEN_HEIGHT + 80, SCREEN_WIDTH);
-			self.SecondTable.frame = CGRectMake(0 ,180, SCREEN_HEIGHT + 80, SCREEN_WIDTH);
-			self.QuestionPickerView.frame = CGRectMake(0,0,SCREEN_HEIGHT + 80,180);
+			self.SecondTable.frame = CGRectMake(0 ,0, SCREEN_HEIGHT + 80, SCREEN_WIDTH);
+			//self.QuestionPickerView.frame = CGRectMake(0,0,SCREEN_HEIGHT + 80,180);
 			self.Sound.frame = CGRectMake(900.0, 10.0, 40.0, 45.0);
 			self.ShowAnswers.frame = CGRectMake(855.0, 10.0, 40.0, 45.0);
 			self.btnStartTest.frame = CGRectMake(400, 12.5, 156, 45);
@@ -248,7 +247,7 @@
 		
 		
 		//QuestionPickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-		if(CustomDataSource != nil){
+		/*if(CustomDataSource != nil){
             
             [CustomDataSource release];
             CustomDataSource = [[CustomPickerDataSource_Num_Questions alloc] init];
@@ -259,7 +258,7 @@
 		QuestionPickerView.delegate = CustomDataSource;
 		QuestionPickerView.showsSelectionIndicator = YES;
            
-		[SecondView  addSubview:QuestionPickerView];	
+		[SecondView  addSubview:QuestionPickerView];	*/
 		
 		//Add Second Table
 		
@@ -294,8 +293,8 @@
 													   message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		
 		[alert show];
-		[message release];
-		[alert release];
+	
+		
 	}
 	
 	
@@ -303,7 +302,7 @@
 	
 	
 	[self.navigationController pushViewController:ce_view animated:YES];
-	[ce_view release];
+	
 	
 	
 }
@@ -330,7 +329,7 @@
 		
 		UIBarButtonItem *Practice = [[UIBarButtonItem alloc] initWithTitle:@"Start Practice Questions Here " style:UIBarButtonItemStylePlain target:self action:@selector(Practice:)];
 		self.navigationItem.rightBarButtonItem = Practice;
-		[Practice release];
+		
 		self.navigationItem.leftBarButtonItem = nil;
 		
 		EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
@@ -386,16 +385,13 @@
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
                                                   initWithCustomView:toolbar];
         
-        [ShareButton release];
-        [spacer release];
-        [StartTest release];
-        [toolbar release];
+       
         
         //_____
 		
 		UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Practice:)];
 		self.navigationItem.leftBarButtonItem = Back;
-		[Back release];
+		
 		
 		
 		
@@ -501,7 +497,7 @@
 	}
 	
 	else {
-		count = 7;
+		count = 8;
 	}
 
 	 
@@ -520,7 +516,7 @@
 		}
 	}
 	else if(tableView.tag == 2){
-        if(indexPath.row == 6){
+        if(indexPath.row == 7){
             return 70;
         }
         return 40;
@@ -541,7 +537,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
 	 
 	
@@ -562,8 +558,8 @@
             TVHeaderImageView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
             [headerView addSubview:TVHeaderImageView];
             [cell addSubview:headerView];
-            [headerView release];
-            [HeaderImage release];
+           
+           
             
         }
         
@@ -579,8 +575,8 @@
             logoView.frame = CGRectMake(140.0,195.0,515,347);
             
             [cell addSubview:logoView];
-            [LogoImage release];
-            [logoView release];
+            
+           
             
             NSString *StartImageLocation = [[NSBundle mainBundle] pathForResource:@"start_practice_questions" ofType:@"png"];
             
@@ -623,7 +619,7 @@
             WebText.text = Website;
             [cell addSubview:WebText];
             
-            [WebText release];
+           
             //[self CheckOrientation];
             
         }
@@ -640,23 +636,41 @@
         EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 		switch (indexPath.row) {
             case 0:
+            {
+                
+                //NSString *textval = [NSString stringWithFormat:@"%d", [appDelegate.NumberOfQuestions integerValue]];
+                //cell.detailTextLabel.text = textval;
+                cell.textLabel.text = @"Number of questions";
+                cell.detailTextLabel.text = [appDelegate.NumberOfQuestions stringValue];
+                
+                break;
+            }
+
+            case 1:
+            {
                 //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
                 cell.textLabel.text = @"Difficulty";
                 cell.detailTextLabel.text = appDelegate.Difficulty;
                 break;
-            case 1:
+            }
+            case 2:
+            {
                 //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
                 cell.textLabel.text = @"Topic";
                 cell.detailTextLabel.text = appDelegate.Topic;
                 break;
+            }
                 
-            case 2:
+            case 3:
+            {
                 //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
                 cell.textLabel.text = @"Type of question";
                 cell.detailTextLabel.text = appDelegate.TypeOfQuestion;
                 break;
+            }
 				
-            case 3:
+            case 4:
+            {
                 
                 if (Sound == nil) {
                     
@@ -681,8 +695,10 @@
                 [Sound addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
                 [cell addSubview:Sound];
                 break;
+            }
                 
-            case 4:
+            case 5:
+            {
                 
                 if (ShowAnswers == nil) {
                     
@@ -707,8 +723,10 @@
 				[ShowAnswers addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
 				[cell.contentView addSubview:ShowAnswers];
 				break;
+            }
                 
-            case 5:
+            case 6:
+            {
                 
                 if(Instruction == nil){
                     
@@ -726,8 +744,10 @@
                 
                 
                 break;
+            }
 				
-            case 6:
+            case 7:
+            {
                 
                 if (btnStartTest == nil) {
                     
@@ -745,6 +765,7 @@
 				[cell.contentView addSubview:btnStartTest];
 				
 				break;
+            }
 		}
 		
 		
@@ -759,30 +780,38 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 0) {
+        
+        SelectNumberofQuestionsViewController *noofquestions =[[SelectNumberofQuestionsViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        [self.navigationController pushViewController:noofquestions animated:YES];
+		
+    }
+
 	
-	if (indexPath.row == 0) {
+	else if (indexPath.row == 1) {
 		SelectDifficulty *Difficulty_view = [[SelectDifficulty alloc] initWithStyle:UITableViewStyleGrouped];
 		Difficulty_view.UserConfigure =  YES;
 		[self.navigationController pushViewController:Difficulty_view animated:YES];
-		[Difficulty_view release];
+		
 		
 		
 	}
-	else if(indexPath.row == 1) {
+	else if(indexPath.row == 2) {
 		
 		SelectTopic *Topic_view  =[[SelectTopic alloc] initWithStyle:UITableViewStyleGrouped];
 		Topic_view.UserConfigure = YES;
 		[self.navigationController pushViewController:Topic_view animated:YES];
-		[Topic_view release];
+		
 		
 	}
 	
-	else if(indexPath.row == 2){
+	else if(indexPath.row == 3){
 		
 		SelectQuestionTemplate *QT_view = [[SelectQuestionTemplate alloc] initWithStyle:UITableViewStyleGrouped];
 		QT_view.UserConfigure = YES;
 		[self.navigationController pushViewController:QT_view animated:YES];
-		[QT_view release];
+		
 		
 	}
 	
@@ -878,21 +907,6 @@
 }
 
 
-- (void)dealloc {
-    [FirstView release];
-	[FirstTable release];
-	[SecondView release];
-	[SecondTable release];
-	[QuestionPickerView release];
-	[CustomDataSource release];
-	[Sound release];
-	[ShowAnswers release];
-	[Instruction release];
-	[logoView release];
-    [TVHeaderImageView release];
-
-    [super dealloc];
-}
 
 
 @end

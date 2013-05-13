@@ -138,7 +138,7 @@
 
 	}
 	
-	return [label autorelease];
+	return label;
 
 	
 }
@@ -161,11 +161,6 @@
 	
 }
 
-- (void)dealloc
-{
-	[customPickerArray release];
-	[super dealloc];
-}
 
 
 @end

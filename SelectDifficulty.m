@@ -27,14 +27,13 @@
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:24.0];
     self.navigationItem.titleView = label;
     [label sizeToFit];
-    [label release];
+   
     
     [self.tableView setBackgroundView:nil];
     NSString *BackImagePath = [[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"];
 	UIImage *BackImage = [[UIImage alloc] initWithContentsOfFile:BackImagePath];
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
-    [BackImage release];
-    
+       
     
 
 	if (QItem_ForEdit != nil) {
@@ -61,7 +60,7 @@
 		UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Back:)];
 		self.navigationItem.leftBarButtonItem = Back;
 		self.navigationItem.title = @"Difficulty";
-		[Back release];
+		
 	}
 	
 
@@ -116,14 +115,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
 	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 	
 	switch (indexPath.row) {
 		case 0:
-			
+        {
 			
 			cell.textLabel.text = @"Foundation";
 			
@@ -138,7 +137,9 @@
 			}
 			
 			break;
+        }
 		case 2:
+        {
 			
 			cell.textLabel.text = @"Foundation & Higher";
 			if ([appDelegate.Difficulty  isEqualToString: @"Foundation & Higher" ]) {
@@ -153,7 +154,9 @@
 			
 			
 			break;
+        }
 		case 1:
+        {
 			
 			cell.textLabel.text = @"Higher";
 			if ([appDelegate.Difficulty  isEqualToString: @"Higher" ]) {
@@ -167,6 +170,7 @@
 			}
 			
 			break;
+        }
 //		case 3:
 //			
 //			cell.textLabel.text = @"All";
@@ -290,11 +294,6 @@
 }
 
 
-- (void)dealloc {
-	[QItem_ForEdit release];
-    [super dealloc];
-	
-}
 
 
 @end
