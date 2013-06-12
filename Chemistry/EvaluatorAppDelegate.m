@@ -21,6 +21,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31971143-1";
 
 #pragma mark -
 #pragma mark Application lifecycle
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
@@ -567,7 +568,10 @@ static NSString* const kAnalyticsAccountId = @"UA-31971143-1";
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
    // NSString *DeviceUDID = [NSString stringWithFormat:@"%@",[UIDevice currentDevice].uniqueIdentifier];
+   // We don't support notifiation on < ios any more
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")){
       NSString *DeviceUDID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+   
     
     NSString *DeviceTokenRemoveCh1 = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     
@@ -588,6 +592,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31971143-1";
         
     } 
     
+    
+    }
 }
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err { 
