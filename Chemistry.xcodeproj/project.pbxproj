@@ -100,6 +100,7 @@
 		7C8C196E165E576B0026CBB5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C196C165E576B0026CBB5 /* Icon-72.png */; };
 		7C8C196F165E576B0026CBB5 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C196D165E576B0026CBB5 /* Icon-72@2x.png */; };
 		7C97C81116492CE80053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C81016492CE80053577F /* AVFoundation.framework */; };
+		7C9EE90B1769CF350015D857 /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CA399F417687F8700882353 /* Evaluator.sqlite */; };
 		7CA399EB1768689000882353 /* 692.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA399EA1768689000882353 /* 692.pdf */; };
 		7CA399F117686DB700882353 /* 832.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA399F017686DB700882353 /* 832.pdf */; };
 		7CC263FA16FA01F200868246 /* Biology.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263F916FA01F200868246 /* Biology.png */; };
@@ -3875,6 +3876,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9EE90B1769CF350015D857 /* Evaluator.sqlite in Resources */,
 				7CE93019145997C400D308B9 /* InfoPlist.strings in Resources */,
 				7CE9305314599A8900D308B9 /* Settings.bundle in Resources */,
 				7CE9307014599D2F00D308B9 /* ArrowWoodImpact.aiff in Resources */,
