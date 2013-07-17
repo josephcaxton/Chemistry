@@ -95,5 +95,6 @@
 -(IBAction)ContinueToNextQuestion:(id)sender;
 - (void)configureCell:(WebViewInCell *)mycell HTMLStr:(NSString *)value;
 //- (void)AdjustScreenToSee:(int)value;
+-(IBAction)StopTest:(id)sender;
 
 @end

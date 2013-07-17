@@ -37,6 +37,8 @@
 	UITableViewController *buyScreen;
 	NSThread *SecondThread;
     NSString *DomainName;
+    BOOL FinishTestNow;
+
     
     // this is to handle return from facebook
     
@@ -65,6 +67,7 @@
 @property (nonatomic, retain) UITableViewController *buyScreen;
 @property (nonatomic, retain) NSThread *SecondThread;
 @property (nonatomic, retain)  Facebook *m_facebook;
+@property (nonatomic, assign)  BOOL FinishTestNow;
 
 
 - (NSString *)applicationDocumentsDirectory;

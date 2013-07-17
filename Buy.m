@@ -136,7 +136,7 @@ int dontShowPriceList = 0;
 			path = [[NSBundle mainBundle] pathForResource:@"From250" ofType:@"plist"];
 			
 		}
-		else if ([AccessLevel intValue] == 3){
+		/*else if ([AccessLevel intValue] == 3){
 			
 			path = [[NSBundle mainBundle] pathForResource:@"From500" ofType:@"plist"];
 			
@@ -145,7 +145,7 @@ int dontShowPriceList = 0;
 			
 			path = [[NSBundle mainBundle] pathForResource:@"From750" ofType:@"plist"];
 			
-		}
+		} */
 		
 		
 		if ([AccessLevel intValue] == 5){
