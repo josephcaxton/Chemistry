@@ -5364,8 +5364,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Chemistry/Chemistry.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chemistry/Chemistry-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -5378,8 +5378,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "3F9A29A4-F4F7-4311-A99D-F8C49FB3EC72";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3F9A29A4-F4F7-4311-A99D-F8C49FB3EC72";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -5391,8 +5391,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Chemistry/Chemistry.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chemistry/Chemistry-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -5405,8 +5405,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "E222D470-09F0-4BFE-A3DE-1B296DC61184";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E222D470-09F0-4BFE-A3DE-1B296DC61184";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
