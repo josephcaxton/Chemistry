@@ -12,7 +12,6 @@
 		7C045F81156BDDE70065E2DC /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F80156BDDE70065E2DC /* libGoogleAnalytics.a */; };
 		7C30000C1791EB5A00A5A10A /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C30FFBC1791EAEC00A5A10A /* libCorePlot-CocoaTouch.a */; };
 		7C30000F1791EBE500A5A10A /* LocalReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C30000E1791EBCE00A5A10A /* LocalReporting.m */; };
-		7C3000111791F40900A5A10A /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C3000101791F3EE00A5A10A /* Evaluator.sqlite */; };
 		7C30001C1791F61F00A5A10A /* btn_questions_deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C3000121791F61F00A5A10A /* btn_questions_deselected.png */; };
 		7C30001D1791F61F00A5A10A /* btn_questions_deselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C3000131791F61F00A5A10A /* btn_questions_deselected@2x.png */; };
 		7C30001E1791F61F00A5A10A /* btn_results_deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C3000141791F61F00A5A10A /* btn_results_deselected.png */; };
@@ -1197,6 +1196,7 @@
 		7CEA2E2D163D20A600C57943 /* Chemistry.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEA2E18163D20A600C57943 /* Chemistry.png */; };
 		7CEA2E3C163D222D00C57943 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E3B163D210800C57943 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7CEA2E3E163D22A600C57943 /* TransparentToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */; };
+		7CEBA8AB17DF19F10049AE93 /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CEBA8AA17DF19D30049AE93 /* Evaluator.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1218,7 +1218,6 @@
 		7C30000B1791EB0D00A5A10A /* NSNumberExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
 		7C30000D1791EBCE00A5A10A /* LocalReporting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalReporting.h; sourceTree = "<group>"; };
 		7C30000E1791EBCE00A5A10A /* LocalReporting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalReporting.m; sourceTree = "<group>"; };
-		7C3000101791F3EE00A5A10A /* Evaluator.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Evaluator.sqlite; sourceTree = "<group>"; };
 		7C3000121791F61F00A5A10A /* btn_questions_deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_questions_deselected.png; sourceTree = "<group>"; };
 		7C3000131791F61F00A5A10A /* btn_questions_deselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_questions_deselected@2x.png"; sourceTree = "<group>"; };
 		7C3000141791F61F00A5A10A /* btn_results_deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_results_deselected.png; sourceTree = "<group>"; };
@@ -2538,6 +2537,7 @@
 		7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentToolBar.m; sourceTree = "<group>"; };
 		7CEA2E3A163D210800C57943 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7CEA2E3B163D210800C57943 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7CEBA8AA17DF19D30049AE93 /* Evaluator.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Evaluator.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4049,7 +4049,7 @@
 				7CE935381459AC4F00D308B9 /* 1063.pdf */,
 				7CE935391459AC4F00D308B9 /* 1064.pdf */,
 				7CE9353A1459AC4F00D308B9 /* 1065.pdf */,
-				7C3000101791F3EE00A5A10A /* Evaluator.sqlite */,
+				7CEBA8AA17DF19D30049AE93 /* Evaluator.sqlite */,
 				7CE9353B1459AC4F00D308B9 /* AttributionIpad.pdf */,
 				7CE9353C1459AC4F00D308B9 /* copyrightlicense_agreement.pdf */,
 				7CE939511459AC9E00D308B9 /* DescriptiveAnswers.xml */,
@@ -4109,7 +4109,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C3000111791F40900A5A10A /* Evaluator.sqlite in Resources */,
+				7CEBA8AB17DF19F10049AE93 /* Evaluator.sqlite in Resources */,
 				7CE93019145997C400D308B9 /* InfoPlist.strings in Resources */,
 				7CE9305314599A8900D308B9 /* Settings.bundle in Resources */,
 				7CE9307014599D2F00D308B9 /* ArrowWoodImpact.aiff in Resources */,
