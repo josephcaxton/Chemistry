@@ -98,6 +98,7 @@
 		7C6CBF5D176780EA0085C697 /* 1036.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C6CBF5C176780EA0085C697 /* 1036.pdf */; };
 		7C6CBF61176782580085C697 /* 306.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C6CBF60176782570085C697 /* 306.pdf */; };
 		7C78BCA7178030F000F30A96 /* 629.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C78BCA6178030F000F30A96 /* 629.pdf */; };
+		7C9090991877EA7C004099EB /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C9090981877EA5D004099EB /* Evaluator.sqlite */; };
 		7C97C81116492CE80053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C81016492CE80053577F /* AVFoundation.framework */; };
 		7CA399EB1768689000882353 /* 692.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA399EA1768689000882353 /* 692.pdf */; };
 		7CA399F117686DB700882353 /* 832.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA399F017686DB700882353 /* 832.pdf */; };
@@ -1136,7 +1137,6 @@
 		7CE939591459B85B00D308B9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE939581459B85B00D308B9 /* libsqlite3.0.dylib */; };
 		7CEA2E3C163D222D00C57943 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E3B163D210800C57943 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7CEA2E3E163D22A600C57943 /* TransparentToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */; };
-		7CEBA8AB17DF19F10049AE93 /* Evaluator.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CEBA8AA17DF19D30049AE93 /* Evaluator.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1315,6 +1315,7 @@
 		7C6CBF5C176780EA0085C697 /* 1036.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1036.pdf; sourceTree = "<group>"; };
 		7C6CBF60176782570085C697 /* 306.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 306.pdf; sourceTree = "<group>"; };
 		7C78BCA6178030F000F30A96 /* 629.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 629.pdf; sourceTree = "<group>"; };
+		7C9090981877EA5D004099EB /* Evaluator.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Evaluator.sqlite; sourceTree = "<group>"; };
 		7C97C81016492CE80053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7CA399EA1768689000882353 /* 692.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 692.pdf; sourceTree = "<group>"; };
 		7CA399F017686DB700882353 /* 832.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 832.pdf; sourceTree = "<group>"; };
@@ -2417,7 +2418,6 @@
 		7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentToolBar.m; sourceTree = "<group>"; };
 		7CEA2E3A163D210800C57943 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7CEA2E3B163D210800C57943 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		7CEBA8AA17DF19D30049AE93 /* Evaluator.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Evaluator.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3869,7 +3869,7 @@
 				7CE935381459AC4F00D308B9 /* 1063.pdf */,
 				7CE935391459AC4F00D308B9 /* 1064.pdf */,
 				7CE9353A1459AC4F00D308B9 /* 1065.pdf */,
-				7CEBA8AA17DF19D30049AE93 /* Evaluator.sqlite */,
+				7C9090981877EA5D004099EB /* Evaluator.sqlite */,
 				7CE9353B1459AC4F00D308B9 /* AttributionIpad.pdf */,
 				7CE9353C1459AC4F00D308B9 /* copyrightlicense_agreement.pdf */,
 				7CE939511459AC9E00D308B9 /* DescriptiveAnswers.xml */,
@@ -3934,7 +3934,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CEBA8AB17DF19F10049AE93 /* Evaluator.sqlite in Resources */,
+				7C9090991877EA7C004099EB /* Evaluator.sqlite in Resources */,
 				7CE93019145997C400D308B9 /* InfoPlist.strings in Resources */,
 				7CE9305314599A8900D308B9 /* Settings.bundle in Resources */,
 				7CE9307014599D2F00D308B9 /* ArrowWoodImpact.aiff in Resources */,
