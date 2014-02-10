@@ -1137,6 +1137,7 @@
 		7CE939591459B85B00D308B9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE939581459B85B00D308B9 /* libsqlite3.0.dylib */; };
 		7CEA2E3C163D222D00C57943 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E3B163D210800C57943 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7CEA2E3E163D22A600C57943 /* TransparentToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */; };
+		CD81ED8118A8519F00FC551E /* NumberOfQuestionsToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = CD81ED8018A8519F00FC551E /* NumberOfQuestionsToChoose.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2418,6 +2419,8 @@
 		7CEA2E39163D20FB00C57943 /* TransparentToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentToolBar.m; sourceTree = "<group>"; };
 		7CEA2E3A163D210800C57943 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7CEA2E3B163D210800C57943 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CD81ED7F18A8519F00FC551E /* NumberOfQuestionsToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfQuestionsToChoose.h; sourceTree = "<group>"; };
+		CD81ED8018A8519F00FC551E /* NumberOfQuestionsToChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfQuestionsToChoose.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2692,6 +2695,8 @@
 				7CE930AD1459A05000D308B9 /* FillTheBlanks.m */,
 				7CE930AE1459A05000D308B9 /* FillTheBlanks1.h */,
 				7CE930AF1459A05000D308B9 /* FillTheBlanks1.m */,
+				CD81ED7F18A8519F00FC551E /* NumberOfQuestionsToChoose.h */,
+				CD81ED8018A8519F00FC551E /* NumberOfQuestionsToChoose.m */,
 			);
 			name = "Template Views";
 			sourceTree = "<group>";
@@ -5050,6 +5055,7 @@
 				7CE931111459AB3800D308B9 /* ViewQuestionList.m in Sources */,
 				7CE931141459AB4500D308B9 /* SelectDifficulty.m in Sources */,
 				7CE931171459AB5400D308B9 /* SelectAllocatedMarks.m in Sources */,
+				CD81ED8118A8519F00FC551E /* NumberOfQuestionsToChoose.m in Sources */,
 				7CE9311A1459AB6400D308B9 /* SelectTopic.m in Sources */,
 				7CE9311D1459AB7300D308B9 /* SelectQuestionTemplate.m in Sources */,
 				7CE931211459AB8700D308B9 /* lk_Topics.m in Sources */,
